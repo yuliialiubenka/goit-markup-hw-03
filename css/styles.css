@@ -50,7 +50,10 @@ h3 {
     font-size: 20px;
     line-height: 1.2;
 }
-.section {
+img {
+    display: block;
+}
+.-section {
     padding: 120px 0;
 }
 .container {
@@ -83,7 +86,7 @@ h3 {
 }
 .header__navigation {
     display: flex;
-    gap: 76px;
+    align-items: center;
 }
 .header__logo {
     font-family: 'Raleway';
@@ -94,22 +97,23 @@ h3 {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--dark);
+    margin-right: 76px;
 }
 .header__logo::before {
     content: "Web";
     color: var(--primary-brand);
 }
-.header__menuItem > a {
+.header__menu-item > a {
     position: relative;
     font-size: inherit;
     font-weight: 500;
     line-height: 1.5;
     color: var(--dark);
 }
-.header__menuItem > a:hover, a:active, a:focus-visible {
+.header__menu-item > a:hover, a:active, a:focus-visible {
     color: var(--pressed-state);
 }
-.header__menuItem > a:hover::after, a:active::after, a:focus-visible::after {
+.header__menu-item > a:hover::after, a:active::after, a:focus-visible::after {
     content: "";
     display: block;
     height: 4px;
@@ -123,33 +127,33 @@ h3 {
     display: flex;
     gap: 40px;
 }
-.header__contactsList {
+.header__contacts-list {
     display: flex;
     gap: 40px;
 }
-.header__contactsList a {
+.header__contacts-list a {
     font-size: inherit;
     color: var(--text);
     font-style: normal;
 }
-.header__contactsList a:hover, a:active, a:focus-visible {
+.header__contacts-list a:hover, a:active, a:focus-visible {
     color: var(--pressed-state);
 }
 /* Main */
 .section {
     padding: 120px 0;
 }
-.headerSection {
+.header-section {
     padding: 188px 0;
     background-color: var(--dark);
     color: var(--white);
 }
-.headerSection__title {
+.header-section__title {
     text-align: center;
     margin: 0 auto;
     max-width: 496px;
 }
-.headerSection__btn {
+.header-section__btn {
     padding: 16px 32px;
 	min-width: 169px;
 	background: var(--primary-brand);
@@ -157,105 +161,107 @@ h3 {
 	color: var(--white);
     margin: 48px auto 0 auto;
 }
-.headerSection__btn:hover {
+.header-section__btn:hover {
     background: var(--pressed-state);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.aboutSection {
+.about-section {
     background-color: var(--white);
 }
-.aboutSection__title {
+.about-section__title {
     text-align: center;
     margin-bottom: 72px;
 }
-.aboutSection__wrapper {
+.about-section__wrapper {
     display: flex;
     gap: 24px;
 }
-.aboutSection__itemText {
-    margin-top: 8px;
+.about-section__item {
+    flex-basis: calc((100% - 72px) / 4);
 }
-.ourWorkSection {
+
+.about-section__item-title {
+    margin-bottom: 8px;
+}
+.our-work-section {
     padding-top: 0;
     background-color: var(--white);
 }
-.ourWorkSection__title {
+.our-work-section__title {
     text-align: center;
     margin-bottom: 72px;
 }
-.ourWorkSection__wrapper {
+.our-work-section__wrapper {
     display: flex;
     gap: 24px;
 }
-.ourTeamSection {
+.our-team-section {
     background-color: var(--light);
 }
-.ourTeamSection__title {
+.our-team-section__title {
     text-align: center;
     margin-bottom: 72px;
 }
-.ourTeamSection__wrapper {
+.our-team-section__wrapper {
     display: flex;
     gap: 24px;
 }
-.ourTeamSection__card {
+.our-team-section__card {
     background: var(--white);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 4px;
     text-align: center;
     padding-bottom: 32px;
 }
-.ourTeamSection__cardPhoto {
-    display: block;
+.our-team-section__card-photo {
     border-radius: 4px 4px 0 0;
 }
-.ourTeamSection__cardTitle {
+.our-team-section__card-title {
     margin-top: 32px;
 }
-.ourTeamSection__cardSubtitle {
+.our-team-section__card-subtitle {
     margin-top: 8px;
 }
 /* Portfolio */
-.portfolioSection {
+.portfolio-section {
     padding: 96px 16px 120px 16px;
 }
-.portfolioSection__tabs {
+.portfolio-section__tabs {
     display: flex;
     justify-content: center;
     gap: 24px;
 }
-.portfolioSection__tabsItem .btn {
+.portfolio-section__tabs-item .btn {
     border: 1px solid var(--accent);
     background: var(--light);
     color: var(--primary-brand);
     padding: 11px 23px;
 }
-.portfolioSection__tabsItem .btn:hover {
+.portfolio-section__tabs-item .btn:hover {
     background: var(--pressed-state);
     border: 1px solid var(--pressed-state);
     color: var(--white);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.portfolioSection__cards {
+.portfolio-section__cards {
     display: flex;
     gap: 48px 24px;
     padding-top: 72px;
     flex-wrap: wrap;
 }
-.portfolioSection__card {
+.portfolio-section__card {
     flex-basis: calc((100% - 72px) / 3);
     border: 1px solid var(--accent);
     padding-bottom: 32px;
 }
-.portfolioSection__card img {
-    display: block;
+.portfolio-section__card img {
     width: 100%;
 }
-.portfolioSection__card h3 {
+.portfolio-section__card h3 {
     padding-left: 16px;
     margin-top: 32px;
 }
-.portfolioSection__card p {
+.portfolio-section__card p {
     padding-left: 16px;
     margin-top: 8px;
     font-size: inherit;

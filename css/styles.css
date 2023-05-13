@@ -224,7 +224,7 @@ img {
 }
 /* Portfolio */
 .portfolio-section {
-    padding: 96px 16px 120px 16px;
+    padding: 96px 0 120px;
 }
 .portfolio-section__tabs {
     display: flex;

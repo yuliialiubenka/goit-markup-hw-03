@@ -172,6 +172,7 @@ img {
     background-color: var(--white);
 }
 .about-section__title {
+    display: none;
     text-align: center;
     margin-bottom: 72px;
 }
@@ -185,6 +186,9 @@ img {
 
 .about-section__item-title {
     margin-bottom: 8px;
+}
+.about-section__item-text {
+    line-height: 1.5;
 }
 .our-work-section {
     padding-top: 0;
@@ -249,11 +253,11 @@ img {
 .portfolio-section__cards {
     display: flex;
     gap: 48px 24px;
-    padding-top: 72px;
+    margin-top: 72px;
     flex-wrap: wrap;
 }
 .portfolio-section__card {
-    flex-basis: calc((100% - 72px) / 3);
+    flex-basis: calc((100% - 48px) / 3);
 }
 .portfolio-section__card-link {
     color: var(--text);
@@ -297,4 +301,5 @@ img {
 }
 .footer__description {
     max-width: 264px;
+    line-height: 1.5;
 }

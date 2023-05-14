@@ -27,7 +27,6 @@ body {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.02em;
-	min-height: 100%;
 	color: var(--text);
 }
 a {
@@ -90,7 +89,6 @@ img {
 }
 .header__logo {
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.16;
@@ -285,7 +283,6 @@ img {
 }
 .footer__logo {
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.16;

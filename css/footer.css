@@ -1,0 +1,15 @@
+.footer {
+    padding: 100px 0;
+    background-color: var(--contrast-high);
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: var(--surface-default);
+}
+
+.footer-text {
+    max-width: 264px;
+    color: var(--surface-default);
+}
